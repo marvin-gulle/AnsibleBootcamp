@@ -23,6 +23,9 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Runs a single command using the runners shell
+      - name: Delete the repository directory
+        run: rm -rf AnsibleBootcamp
+
       - name: Clone the repository
         run: git clone https://github.com/marvin-gulle/AnsibleBootcamp.git
 
