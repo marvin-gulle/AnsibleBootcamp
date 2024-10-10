@@ -2,10 +2,16 @@
   shell: rm -rf Test2.txt
 
 - name: Delete testing2 folder
-  shell: rm -rf testing
+  shell: rm -rf testing2
 
 - name: Create Tes2t.txt
   shell: touch Test2.txt
 
 - name: Create testing2 folder
   shell: mkdir testing2
+
+- name: Create testing2 folder
+  shell: mkdir testing2
+
+- name: Move index.html to /var/www/html
+  shell: mv index.html /var/www/html
