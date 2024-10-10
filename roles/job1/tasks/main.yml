@@ -1,11 +1,11 @@
-- name: Delete Test.txt
-  shell: rm -rf Test.txt
+- name: Delete Test2.txt
+  shell: rm -rf Test2.txt
 
-- name: Delete testing folder
+- name: Delete testing2 folder
   shell: rm -rf testing
 
-- name: Create Test.txt
-  shell: touch Test.txt
+- name: Create Tes2t.txt
+  shell: touch Test2.txt
 
-- name: Create testing folder
-  shell: mkdir testing
+- name: Create testing2 folder
+  shell: mkdir testing2
