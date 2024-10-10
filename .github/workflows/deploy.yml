@@ -26,5 +26,8 @@ jobs:
       - name: Clone the repository
         run: git clone https://github.com/marvin-gulle/AnsibleBootcamp.git
 
-      #- name: Run Ansible Playbook
-       # run: ansible-playbook -i hosts playbook.yml -u ec2-user --private-key /home/ec2-user/Ansible_Essentials.pem
+      - name: Go to the repository directory
+        run: cd AnsibleBootcamp
+
+      - name: Run Ansible Playbook
+        run: ansible-playbook -i hosts playbook.yml -u ec2-user --private-key /home/ec2-user/Ansible_Essentials.pem
