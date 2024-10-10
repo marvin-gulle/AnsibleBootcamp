@@ -10,8 +10,5 @@
 - name: Create testing2 folder
   shell: mkdir testing2
 
-- name: Create testing2 folder
-  shell: mkdir testing2
-
 - name: Move index.html to /var/www/html
   shell: mv index.html /var/www/html
