@@ -23,14 +23,10 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Runs a single command using the runners shell
-      - name: Delete the repository directory
-        run: rm -rf AnsibleBootcamp
-
-      - name: Clone the repository
-        run: git clone https://github.com/marvin-gulle/AnsibleBootcamp.git
-
-      - name: Go to the repository directory
-        run: cd AnsibleBootcamp
-
-      - name: Run Ansible Playbook
-        run: ansible-playbook -i hosts playbook.yml -u ec2-user --private-key /home/ec2-user/Ansible_Essentials.pem
+      - name: Run a multi-line script
+        run: |
+          rm -rf AnsibleBootcamp
+          git clone https://github.com/marvin-gulle/AnsibleBootcamp.git
+          cd AnsibleBootcamp
+          ls -lrt
+          ansible-playbook -i hosts playbook.yml -u ec2-user --private-key /home/ec2-user/Ansible_Essentials.pem
